@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Lori Gibbons Portfolio Site</title>
+
+		<!-- GOOGLE ANALYTICS-->
+				<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-105074564-1', 'auto');
+			  ga('send', 'pageview');
+				</script>
+
+	<!-- To Top Button -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type='text/javascript'>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('#scroll').fadeIn();
+				} else {
+					$('#scroll').fadeOut();
+				}
+			});
+			$('#scroll').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+		});
+		</script>
+
+
+
+
+		<link type="text/css" rel="stylesheet" href="styles.css" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="form.css" />
+
+		<!--Link to Lightbox CSS -->
+		<link href="lightbox.css" rel="stylesheet">
+
+    <!-- Google Fonts Here -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow" rel="stylesheet">
+
+
+    <!-- Form Scripts Here -->
+    <script type="text/javascript" src="form_validate.js"> </script>
+    <!-- Form Scripts End -->
+
+		<!-- VIEWPORT TAG-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+
+		<link rel="icon" type="image/png" href="images/favicon.png">
+
+
+
+	</head>
+
+<body>
+
+
+<!-- BackToTop Button -->
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+<!-- ++++++++++++ Page Content Goes Here ++++++++++++ -->
+
+    <div id="container">
+
+	        <header id="headercontainer">
+	            <nav class="mobilenav">
+	                <h1><a href="#homescroll" class="smoothScroll">Lori Gibbons</a></h1>
+	                <ul>
+											<li class="blur">
+	                        <a href="#aboutscroll" class="smoothScroll">
+	                            About
+	                        </a>
+	                    </li>
+											<li class="blur">
+	                        <a href="#experiencescroll" class="smoothScroll">
+	                            Experience
+	                        </a>
+	                    </li>
+	                    <li class="blur">
+	                        <a href="web.html" class="smoothScroll">
+	                            Graphic Work
+	                        </a>
+	                    </li>
+											<li class="blur">
+	                        <a href="graphics.html" class="smoothScroll">
+	                            Web Work
+	                        </a>
+	                    </li>
+											<li class="blur">
+	                        <a href="#contactscroll" class="smoothScroll">
+	                          Contact
+	                        </a>
+	                    </li>
+	                </ul>
+	            </nav>
+	            <nav class="desktopnav">
+	                <ul>
+										<li id="h1">
+											<a href="#homescroll" class="smoothScroll">Lori Gibbons</a>
+										</li>
+										<li class="blur">
+	                        <a href="#aboutscroll" class="smoothScroll">About</a>
+	                    </li>
+											<li class="blur">
+	                        <a href="#experiencescroll" class="smoothScroll">Experience</a>
+	                    </li>
+
+	                    <li class="blur">
+	                        <a href="graphics.html" class="smoothScroll">Graphic Work</a>
+	                    </li>
+											<li class="blur">
+	                        <a href="web.html" class="smoothScroll">Web Work</a>
+	                    </li>
+											<li class="blur">
+	                        <a href="#contactscroll" class="smoothScroll">Contact</a>
+	                    </li>
+	                </ul>
+	            </nav>
+	            <img src="images/southkorea1000.jpg" alt="Header Image" title="Lori Gibbons Header Image" class="buildingimagemobile"/>
+	            <img src="images/southkorea1000.jpg" alt="Header Image" title="Lori Gibbons Header Image" class="buildingimagedesktop"/>
+	        </header>
+
+
+
+		<!--WORKS SECTION -->
+
+		<section class="works" id="worksscroll">
+			<div class="portfoliobuttoncontainer">
+				<h2>Graphic Work</h2>
+				<a href="images/gallery/portfolio.pdf" target="_blank">
+					<button class="portfoliobutton">SEE MY PORTFOLIO BOOKLET <br/> <span>here</span></button>
+				</a>
+			</div>
+				<div class="controls">
+					<button type="button" class="control" data-filter="all">All</button>
+					<button type="button" class="control" data-filter=".green">Graphics</button>
+					<button type="button" class="control" data-filter=".blue">Web</button>
+					<button type="button" class="control" data-filter=".pink">Artwork</button>
+					<button type="button" class="control" data-filter="none">None</button>
+
+					<button type="button" class="control" data-sort="default:asc">Asc</button>
+					<button type="button" class="control" data-sort="default:desc">Desc</button>
+				</div>
+
+				<div class="gallerycontainer">
+
+
+
+
+<!-- Images for Lightbox
+
+INSTRUCTIONS:::
+
+	Add a data-lightbox attribute to any image link to enable Lightbox. For the value of the attribute, use a unique name for each image. For example:
+	<a href="images/image-1.jpg" data-lightbox="image-1" data-title="My caption">Image #1</a>
+
+
+
+	<a href="images/gallery/artwork/PuyaPainting.jpg" data-lightbox="roadtrip" data-title="My caption">
+		<img class="example-image" src="images/gallery/artwork/PuyaPainting.jpg" alt="" title=""/>
+	</a>
+-->
+
+
+
+
+                    <!--BLUE-->
+                    <div class="mix blue">
+						<a href="images/gallery/web/rubbersoulindex.PNG" data-lightbox="gallery" data-title="Website for Rubber Soul Yoga Studio">
+                        	<img src="images/gallery/web/rubbersoulindex.PNG" alt="Rubber Soul Website" Title="Rubber Soul Website"/>
+						</a>
+                    </div>
+                    <div class="mix blue">
+						<a href="images/gallery/web/sbcbutton.jpg" data-lightbox="gallery" data-title="Southern Brewing Facebook Banner Ad">
+                        	<img src="images/gallery/web/sbcbutton.jpg" alt="Brewery Web Ad" Title="Brewery Web Ad"/>
+						</a>
+                    </div>
+                    <div class="mix blue">
+						<a href="images/gallery/web/gritmockup.jpg" data-lightbox="gallery" data-title="Website Mockup">
+                        	<img src="images/gallery/web/gritmockup.jpg" alt="Hip Restaurant Mockup" Title="Hit Restaurant Mockup"/>
+						</a>
+                    </div>
+                    <div class="mix blue">
+						<a href="images/gallery/web/travelandleisurefb.jpg" data-lightbox="gallery" data-title="Travel and Lesiure Facebook Banner">
+                        	<img src="images/gallery/web/travelandleisurefb.jpg" alt="Travel and Lesure Ad" Title="Travel and Lesiure Ad"/>
+						</a>
+                    </div>
+                    <div class="mix blue">
+						<a href="images/gallery/web/sbcemail.jpg" data-lightbox="gallery" data-title="Southern Brewing Company Email Ad">
+                        	<img src="images/gallery/web/sbcemail.jpg" alt="Brewery Web Ad" Title="Brewery Web Ad"/>
+						</a>
+                    </div>
+					<!--GREEN-->
+					<div class="mix green">
+						<a href="images/gallery/graphic/bookcoverequus.jpg" data-lightbox="gallery" data-title="Book Cover for Equus">
+                        	<img src="images/gallery/graphic/bookcoverequus.jpg" alt="Equus Book Cover" Title="Equus Book Cover"/>
+						</a>
+                    </div>
+                    <div class="mix green">
+						<a href="images/gallery/graphic/rocketsalonmockup.jpg" data-lightbox="gallery" data-title="Rocket Salon New Logo  and Mockup">
+							<img src="images/gallery/graphic/rocketsalonmockup.jpg" alt="Salon Logo" title="Salon Logo"/>
+						</a>
+					</div>
+                    <div class="mix green">
+						<a href="images/gallery/graphic/postcardathens.jpg" data-lightbox="gallery" data-title="Retro Postcard Design">
+							<img src="images/gallery/graphic/postcardathens.jpg" alt="Athens Postcard" title="Athens Postcard"/>
+						</a>
+					</div>
+                    <div class="mix green">
+						<a href="images/gallery/graphic/campbellphotography.png" data-lightbox="gallery" data-title="New Logo Design for Campbell Photography">
+							<img src="images/gallery/graphic/campbellphotography.png" alt="Campbell Photography" Title="Campbell Photography"/>
+						</a>
+					</div>
+                    <div class="mix green">
+						<a href="images/gallery/graphic/campbellphotography1.png" data-lightbox="gallery" data-title="New Logo Design for Campbell Photography">
+							<img src="images/gallery/graphic/campbellphotography1.png" alt="Campbell Photography" title="Campbell Photography"/>
+						</a>
+					</div>
+                    <div class="mix green">
+						<a href="images/gallery/graphic/gogeekteck1.png" data-lightbox="gallery" data-title="Go Geek Teck Logo Design">
+							<img src="images/gallery/graphic/gogeekteck1.png" alt="Go Geek Teck Logo" title="Go Geek Teck Logo"/>
+						</a>
+					</div>
+                    <div class="mix green">
+						<a href="images/gallery/graphic/guillochepattern.png" data-lightbox="gallery" data-title="Pattern Design and Experimentation">
+							<img src="images/gallery/graphic/guillochepattern.png" alt="Guilloche Pattern" title="Guilloche Pattern"/>
+						</a>
+					</div>
+                    <div class="mix green">
+						<a href="images/gallery/graphic/infographicoranges.jpg" data-lightbox="gallery" data-title="Oranges Infographic">
+							<img src="images/gallery/graphic/infographicoranges.jpg" alt="Orange Infographic" title="Orange Infographic"/>
+						</a>
+					</div>
+                    <div class="mix green">
+						<a href="images/gallery/graphic/moitflyermockup.jpg" data-lightbox="gallery" data-title="Flyer Mockup for IT Company">
+							<img src="images/gallery/graphic/moitflyermockup.jpg" alt="MOIT Flyer" title="MOIT Flyer"/>
+						</a>
+					</div>
+                    <div class="mix green">
+						<a href="images/gallery/graphic/moitpostcardmockup.jpg" data-lightbox="gallery" data-title="Postcard Mockup for IT Company">
+							<img src="images/gallery/graphic/moitpostcardmockup.jpg" alt="MOIT Postcard" title="MOIT Postcard"/>
+						</a>
+					</div>
+                    <div class="mix green">
+						<a href="images/gallery/graphic/moitlogoverticalcolor.jpg" data-lightbox="gallery" data-title="New Logo Design for IT Company">
+							<img src="images/gallery/graphic/moitlogoverticalcolor.jpg" alt="MOIT Logo" title="MOIT Logo"/>
+						</a>
+					</div>
+                    <div class="mix green">
+						<a href="images/gallery/graphic/omninewlogo1.png" data-lightbox="gallery" data-title="New Logo for local gym">
+							<img src="images/gallery/graphic/omninewlogo1.png" alt="Gym Logo" title="Gym Logo"/>
+						</a>
+					</div>
+                    <div class="mix green">
+						<a href="images/gallery/graphic/rebeledge.jpg" data-lightbox="gallery" data-title="Brand Study for Calvin Klein (I am not associated with Calvin Klein)">
+							<img src="images/gallery/graphic/rebeledge.jpg" alt="Brand Study" title="Brand Study"/>
+						</a>
+					</div>
+                    <div class="mix green">
+						<a href="images/gallery/graphic/2017.PNG" data-lightbox="gallery" data-title="Texture and pattern study">
+							<img src="images/gallery/graphic/2017.PNG" alt="2017" Title="2017"/>
+						</a>
+					</div>
+                    <!--PINK-->
+                    <div class="mix pink">
+						<a href="images/gallery/artwork/puyapainting.jpg" data-lightbox="gallery" data-title="Puya Resting from the Dog Park painting">
+                        	<img src="images/gallery/artwork/puyapainting.jpg" alt="Puya" Title="Puya"/>
+						</a>
+                    </div>
+                    <div class="mix pink">
+						<a href="images/gallery/artwork/picklescanned.jpg" data-lightbox="gallery" data-title="Canned pickles painting">
+							<img src="images/gallery/artwork/picklescanned.jpg" alt="Painting" Title="Canned Pickles paining"/>
+						</a>
+                    </div>
+					<div class="mix pink">
+						<a href="images/gallery/artwork/coffeepot.jpg" data-lightbox="gallery" data-title="Coffee Pot painting">
+                        	<img src="images/gallery/artwork/coffeepot.jpg" alt="Coffee Pot" Title="Coffee Pot"/>
+						</a>
+                    </div>
+                    <div class="mix pink">
+						<a href="images/gallery/artwork/paradise.jpg" data-lightbox="gallery" data-title="Paradise Theater painting">
+                        	<img src="images/gallery/artwork/paradise.jpg" alt="Paradise Theater" Title="Paradise Theater"/>
+						</a>
+                    </div>
+
+
+
+					<div class="gap"></div>
+					<div class="gap"></div>
+					<div class="gap"></div>
+				</div>
+
+		</section>
+
+
+		<footer>
+
+			<section class="footerbackground">
+				<div class="footerfloat">
+					<a href="mailto:lori.j.gibbons@gmail.com"><img src="images/icons/emailwhite.png" title="Email" alt="Email" />
+					</a>
+				</div>
+				<div class="footerfloat">
+					<a href="https://www.facebook.com/lori.gibbons.50"><img src="images/icons/facebookwhite.png" title="Facebook" alt="Facebook" />
+				</a>
+				</div>
+				<div class="footerfloat">
+					<a href="https://www.linkedin.com/in/lorigibbons/"><img src="images/icons/linkedinwhite.png" title="LinkedIn" alt="LinkedIn" /></a>
+				</div>
+				<div class="footerfloat">
+					<img src="images/icons/phonewhite.png" title="Call Me" alt="Call Me" />
+				</div>
+				<div>
+					<img class="footerlogo" src="images/lorigibbonslogo.png">
+				</div>
+				<div>
+					<p>&copy; 2017 Lori Gibbons</p>
+				</div>
+			</section>
+
+
+		</footer>
+
+
+
+		<!-- JQUERY TAG -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <script src="js/button.js"></script>
+
+		<script src="js/smoothscroll.js"></script>
+
+
+		<!-- MIXITUP TAGS -->
+		<script src="js/mixitup.js"></script>
+
+        <script>
+            var containerEl = document.querySelector('.gallerycontainer');
+
+            var mixer = mixitup(containerEl);
+        </script>
+
+		<!-- Lightbox JS Tag -->
+		<script src="js/lightbox.js"></script>
+
+		</body>
+
+</html>

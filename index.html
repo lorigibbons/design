@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+
+		<title>Lori Gibbons Portfolio Site</title>
+<!-- GOOGLE ANALYTICS-->
+		<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-105074564-1', 'auto');
+	  ga('send', 'pageview');
+		</script>
+
+	<!-- To Top Button -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type='text/javascript'>
+		$(document).ready(function(){
+			$(window).scroll(function(){
+				if ($(this).scrollTop() > 100) {
+					$('#scroll').fadeIn();
+				} else {
+					$('#scroll').fadeOut();
+				}
+			});
+			$('#scroll').click(function(){
+				$("html, body").animate({ scrollTop: 0 }, 600);
+				return false;
+			});
+		});
+		</script>
+
+		<link type="text/css" rel="stylesheet" href="styles.css" />
+			<link rel="stylesheet" type="text/css" media="screen" href="form.css" />
+
+		<!--Link to Lightbox CSS -->
+		<link href="lightbox.css" rel="stylesheet">
+
+        <!-- Google Fonts Here -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Over+the+Rainbow" rel="stylesheet">
+
+
+        <!-- Form Scripts Here -->
+        <script type="text/javascript" src="form_validate.js"> </script>
+        <!-- Form Scripts End -->
+
+		<!-- VIEWPORT TAG-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv-printshiv.min.js"></script>
+		<![endif]-->
+
+		<!-- FAVICON -->
+		<link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+
+<!-- BackToTop Button -->
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+<!-- ++++++++++++ Page Content Goes Here ++++++++++++ -->
+
+    <div id="container">
+        <header id="headercontainer">
+            <nav class="mobilenav">
+                <h1><a href="#homescroll" class="smoothScroll">Lori Gibbons</a></h1>
+                <ul>
+										<li class="blur">
+                        <a href="#aboutscroll" class="smoothScroll">
+                            About
+                        </a>
+                    </li>
+										<li class="blur">
+                        <a href="#experiencescroll" class="smoothScroll">
+                            Experience
+                        </a>
+                    </li>
+                    <li class="blur">
+                        <a href="web.html" class="smoothScroll">
+                            Graphic Work
+                        </a>
+                    </li>
+										<li class="blur">
+                        <a href="graphics.html" class="smoothScroll">
+                            Web Work
+                        </a>
+                    </li>
+										<li class="blur">
+                        <a href="#contactscroll" class="smoothScroll">
+                          Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="desktopnav">
+                <ul>
+									<li id="h1">
+										<a href="#homescroll" class="smoothScroll">Lori Gibbons</a>
+									</li>
+									<li class="blur">
+                        <a href="#aboutscroll" class="smoothScroll">About</a>
+                    </li>
+										<li class="blur">
+                        <a href="#experiencescroll" class="smoothScroll">Experience</a>
+                    </li>
+
+                    <li class="blur">
+                        <a href="graphics.html" class="smoothScroll">Graphic Work</a>
+                    </li>
+										<li class="blur">
+                        <a href="web.html" class="smoothScroll">Web Work</a>
+                    </li>
+										<li class="blur">
+                        <a href="#contactscroll" class="smoothScroll">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <img src="images/southkorea1000.jpg" alt="Header Image" title="Lori Gibbons Header Image" class="buildingimagemobile"/>
+            <img src="images/southkorea1000.jpg" alt="Header Image" title="Lori Gibbons Header Image" class="buildingimagedesktop"/>
+        </header>
+
+        <section class="about clearfix lg-space" id="aboutscroll">
+            <h2>About Me</h2>
+						<div class="about-cont">
+							<article class="abouticons">
+								<a href="http://onlinemasters.jou.ufl.edu/web-design/" target="_blank">
+								<figure><img class="blur" src="images/workingon.png" alt="Working On" title="What I am working on" /></figure>
+								</a>
+								<h3>EDUCATION:</h3>
+								<p><em>Master of Arts in Mass Communicaiton</em></p>
+								<p>Web Design &amp; Online Communicaiton</p>
+								<p>The University of Florida</p>
+	            </article>
+
+	            <article class="abouticons">
+								<a href="http://www.franklin.uga.edu/" target="_blank">
+									<figure><img class="blur" src="images/workplace.png" alt="Workplace" title="Where I am working" /></figure>
+								</a>
+								<h3>WORKPLACE:</h3>
+								<p><em>Web Designer</em></p>
+								<p>The University of Florida</p>
+								<p>Distance &amp; Continuing Education</p>
+	            </article>
+
+	            <article class="abouticons">
+								<div a href="#contactscroll">
+									<figure><img class="blur" src="images/contact.png" alt="Contact Me" title="Contact Me" /></figure>
+									<h3>CONTACT:</h3>
+									<p><a href="mailto:lori.j.gibbons@gmail.com">lori.j.gibbons@gmail.com</a></p>
+									<p>706.765.8933</p>
+									<p><a class="lo-link" href="https://www.linkedin.com/in/lorigibbons/">LinkedIn Profile</a></p>
+							</div>
+	            </article>
+						</div>
+        </section>
+
+
+		<div class="experiencecontainer lg-space"  id="experiencescroll">
+			<section class="experience">
+				<h2>Experience</h2>
+				<div class="experience1">
+					<h3>The University of Florida</h3>
+					<h3>Web Designer</h3>
+					<p>- Plan, develop, and manage websites and landing pages for UF Distance Learning, UF Flexible Learning, UF Professional Development, UF Conferences, UF TREEO, and other programs supported by Distance Education Service Center.</p>
+
+					<p>- Coordinate the development of digital media and creatives for advertising. Ensure all artistic work follows the correct University of Florida branding while being inventive and imaginative in developing original and creative products.</p>
+				</div>
+				<div class="experience1">
+					<h3>The University of Georgia</h3>
+					<h3>IT Proofessional Assistant</h3>
+					<p>- Provide assistant-level support for desktop and laptop computers (Windows, Mac), computer labs, and technology-enhanced classrooms including security, networking, peripherals, hardware, and software in accordanc e with standard service levels; provide support for unit specific software</p>
+
+					<p>- Develop and deploy desktop computer images, manage equipment life cycle and facilitate OS provisioning utilizing LANDesk</p>
+				</div>
+				<div class="experience1">
+					<h3>Athens Technical College</h3>
+					<h3>Learning Management System Administrator</h3>
+					<p>- Serve as administrator for college’s learning management system; troubleshoot problems and implement solutions for Angel and Blackboard and escalate when needed; create/disable accounts and courses, run database files for course creation, change passwords, manage course start/end dates; design and update e-learning portal pages</p>
+
+					<p>- Work in partnership with the Center for Teaching and Learning staff to support academic technological initiatives and creative services; edit videos and photographs, create brochures, print large-scale designs on plotter printer</p>
+				</div>
+			</section>
+
+
+
+
+			<section class="skills">
+				<h2>Skills</h2>
+					<div class="SkillBar">
+					  <div id="Skill-photoshop"> <span class="Skill-Area ">Photoshop</span> <span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">75%</span> </div>
+					</div>
+					<div class="SkillBar">
+					  <div id="Skill-illustrator"> <span class="Skill-Area ">Illustrator</span> <span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">75%</span> </div>
+					</div>
+					<div class="SkillBar">
+					  <div id="Skill-indesign"> <span class="Skill-Area ">InDesign</span> <span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">65%</span> </div>
+					</div>
+					<div class="SkillBar">
+					  <div id="Skill-html"> <span class="Skill-Area ">HTML5 </span> <span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">90%</span> </div>
+					</div>
+					<div class="SkillBar">
+					  <div id="Skill-CSS"> <span class="Skill-Area ">CSS3 </span> <span class="PercentText fadeIn fadeIn-3s fadeIn-Delay-3s responsive-percent">50%</span> </div>
+					</div>
+			</section>
+
+			<section class="education">
+
+				<h2>Education</h2>
+
+				<div class="education2">
+					<h3>Master's Degree</h3>
+				</div>
+
+				<div class="education1">
+					<h3>Web Design and Online Communicaiton</h3>
+					<h3>The University of Florida</h3>
+					<p>Specialization: Web Design</p>
+				</div>
+
+				<div class="education3">
+
+					<div class="education5">
+						<h3>Bachelor's Degree</h3>
+					</div>
+
+
+					<div class="education4">
+						<h3>BFA Studio Art</h3>
+						<h3>The University of Georgia</h3>
+						<p>Specialization: Digital Media</p>
+					</div>
+						<div class="education4">
+						<h3>BA Spanish</h3>
+						<h3>The University of Georgia</h3>
+						<p>Specialization: Spanish Lignuistics</p>
+					</div>
+				</div>
+
+			</section>
+
+			<section class="resume">
+				<h2>Resume</h2>
+				<div class="resumebutton btn">
+					<a href="images/resume.pdf" target="_blank">View or Download</a>
+				</div>
+
+			</section>
+
+		</div>
+
+
+<!-- CONTACT SECTION -->
+        <section id="contactscroll" class="contactpurplecontainer lg-space">
+                <h2>Contact</h2>
+
+                <section class="contactfloat icontopmargin">
+                    <article class="contacticonsleft">
+                        <a href="mailto:lori.j.gibbons@gmail.com"><img src="images/icons/email.png" alt="Email" title="Email Me!" /></a>
+                        <h4>EMAIL</h4>
+                        <p><a href="mailto:lori.j.gibbons@gmail.com" >lori.j.gibbons@gmail.com</a></p>
+                    </article>
+                    <article class="contacticonsleft">
+                        <img src="images/icons/phone.png" alt="Phone" title="Phone Me!" />
+                        <h4>PHONE</h4>
+                        <p>706.765.8933</p>
+                    </article>
+                    <article class="contacticonsleft">
+                        <a href="https://www.linkedin.com/in/lorigibbons/" target="_blank"><img src="images/icons/linkedin.png" alt="LinkedIn" title="I'm on LinkedIn!"/></a>
+                        <h4>LINKEDIN</h4>
+                        <p><a href="https://www.linkedin.com/in/lorigibbons/" target="_blank">linkedin.com/in/lorigibbons</a></p>
+                    </article>
+                    <article class="contacticonsleft">
+                        <a href="https://www.facebook.com/lori.gibbons.50" target="_blank"><img src="images/icons/facebook.png" alt="Facebook" title="Facebook Message Me!"/></a>
+                        <h4>FACEBOOK</h4>
+                        <p><a href="https://www.facebook.com/lori.gibbons.50" target="_blank">facebook.com/lori.gibbons.50</a></p>
+                    </article>
+                </section>
+
+                <section class="contactfloat">
+                    <figure><img src="images/phone.png" alt="Phone" title="Vintage Phone"  class="phonepicture" />
+										<figcaption>Ring Ding</figcaption>
+									    </figure>
+                </section>
+		</section>
+
+            <section class="clearfix contact lg-space">
+
+                    <form class ="clearfix" id="contactform" name="contactform" method="post" action="form.php" onsubmit="return validateForm(this)">
+
+
+                    <p>Don't be shy!</p>
+                    <p>Let me get back to you!</p>
+
+                    <div class="name">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Your name" maxlength="30" autocomplete="on" />
+
+                    </div>
+
+
+                    <div class="email">
+                        <label for="email">Email:</label>
+                        <input type="email" name="name" id="email" placeholder="Your email" maxlength="30" autocomplete="on"/>
+                    </div>
+
+                    <div class="comments">
+                        <label for="comments">Additional Comments:</label>
+                        <textarea name="comments" id="comments" rows="10" cols="30" placeholder="Insert any additional comments you would like us to know here."></textarea>
+                    </div>
+
+                    <div class="reset"><input type="reset" name="reset" id="reset" value="Clear" /></div>
+
+                    <div class="submit"><input type="submit" name="submit" id="submit" value="Send" /></div>
+
+                </form>
+
+
+            </section>
+
+
+
+
+		<footer>
+
+			<section class="footerbackground">
+				<div class="footerfloat">
+					<a href="mailto:lori.j.gibbons@gmail.com"><img src="images/icons/emailwhite.png" title="Email" alt="Email" />
+					</a>
+				</div>
+				<div class="footerfloat">
+					<a href="https://www.facebook.com/lori.gibbons.50"><img src="images/icons/facebookwhite.png" title="Facebook" alt="Facebook" />
+				</a>
+				</div>
+				<div class="footerfloat">
+					<a href="https://www.linkedin.com/in/lorigibbons/"><img src="images/icons/linkedinwhite.png" title="LinkedIn" alt="LinkedIn" /></a>
+				</div>
+				<div class="footerfloat">
+					<img src="images/icons/phonewhite.png" title="Call Me" alt="Call Me" />
+				</div>
+				<div>
+					<img class="footerlogo" src="images/lorigibbonslogo.png">
+				</div>
+				<div>
+					<p>&copy; 2019 Lori Gibbons</p>
+				</div>
+			</section>
+
+
+		</footer>
+
+    </div>
+
+
+
+<!-- JQUERY TAG -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <script src="js/button.js"></script>
+
+		<script src="js/smoothscroll.js"></script>
+
+		<script src="js/lightbox.js"></script>
+
+
+
+
+</body>
+
+</html>
